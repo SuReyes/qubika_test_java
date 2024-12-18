@@ -6,13 +6,13 @@ This repository is to store the automated tests for the Qubika Technical Test
 - base.java: Contains the WebDriver setup and teardown logic, Driver Manager and RestClient
 - pages: Represents the login and Main pages (using the Page Object Model)
 - test: Contains test cases for technical test functionality (JUnit tests).
-- Jenkinsfile/: Jenkinsfile defines the CI/CD pipeline for automating the build, test, and deployment processes
-- Dockerfile/: The Dockerfile defines the steps to build a Docker image for the project
+- Jenkinsfile: Jenkinsfile defines the CI/CD pipeline for automating the build, test, and deployment processes
+- Dockerfile: The Dockerfile defines the steps to build a Docker image for the project
 - Execution report: Find it in 'surefire-reports' file, go to index.html -> right click -> Open In -> Browser -> select the browser
 
 # Prerequisites
 - Java Development Kit (JDK) (Version 17 or above)
-- Maven (for managing dependencies)
+- Maven
 - JUnit knowledge (for writing and running tests)
 - Selenium WebDriver knowledge (for browser automation)
 - IDE (like IntelliJ IDEA or Eclipse) to write and execute Java code
