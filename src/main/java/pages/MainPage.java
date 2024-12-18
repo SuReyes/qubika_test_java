@@ -12,14 +12,10 @@ public class MainPage {
     private By contactUs = By.xpath("//li[@class='menu-item menu-item-contact-us contact-us-main-menu-button contact-us-modal-open']/a");
     private By contentForm = By.xpath("//div[@class='modal-content hubspot-form']");
 
+    // Actions on the page
     public MainPage(WebDriver driver) {
         this.driver = driver;
     }
-
-//    public MainPage goToMainPage(String url) {
-//        driver.get(url);
-//        return this;
-//    }
 
     public String getCurrentUrl() {
         return driver.getCurrentUrl();

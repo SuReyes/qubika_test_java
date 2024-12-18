@@ -30,9 +30,7 @@ public class TestFormValidation {
 
             // Validate error messages for all mandatory fields
             formPage.validateFieldsErrorMessages(false);
-
             formPage.enterFirstName("Test name");
-            // Validate error messages for all mandatory fields
             formPage.validateFieldsErrorMessages(true);
 
         } finally {

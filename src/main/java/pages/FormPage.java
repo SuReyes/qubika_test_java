@@ -12,7 +12,7 @@ public class FormPage {
 
     private final WebDriver driver;
 
-    // Locators for the Login page
+    // Locators for the Form
     private By contentForm = By.xpath("//div[@class='modal-content hubspot-form']");
     private By firstNameField = By.xpath("//input[@name='firstname']");
     private By lastNameField = By.xpath("//input[@name='lastname']");
@@ -28,15 +28,10 @@ public class FormPage {
     private By messageFieldErrorMessage = By.xpath("//div[@class='hs_message hs-message hs-fieldtype-textarea field hs-form-field']/ul[@class='no-list hs-error-msgs inputs-list']");
     private By submitButton = By.xpath("//input[@class='hs-button primary large']");
 
-
+    // Actions on the page
     public FormPage(WebDriver driver) {
         this.driver = driver;
     }
-
-//    public FormPage goToFormPage(String url) {
-//        driver.get(url);
-//        return this;
-//    }
 
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
@@ -46,7 +41,6 @@ public class FormPage {
         driver.findElement(contentForm).click();
     }
 
-    // Actions on the page
     public void enterFirstName(String username) {
         driver.findElement(firstNameField).sendKeys(username);
     }
